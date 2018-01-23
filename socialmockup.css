@@ -1,5 +1,6 @@
 body{
     font-family: Courier New, Courier, monospace;
+    background-color: rgb(202, 197, 197);
 }
 
 #socialHeader {
@@ -12,12 +13,14 @@ body{
 }
 
 #photo { position: absolute;
-          top: 150px;
-         left: 20px;
-         width: 200px;
-         height: 200px;
+        top: 150px;
+        left: 20px;
+        width: 200px;
+        height: 200px;
         border: 2px solid black;
         background-color: rgb(50, 50, 128);
+        z-index: 1000;
+        
 
 }
 
@@ -37,10 +40,18 @@ body{
     margin: 0 auto;
     position: relative;
     width: 850px;
-    height: 70px;
-    padding-left: 400px;
+    height: 50px;
+    padding-left: 0px;
     border-right: 2px gray;
+    background-color: white;
+    position: relative;
+    
+}
 
+.linksClass{
+    position: absolute;
+    left:200px;
+   
 }
 .name { position: absolute;
    left: 240px;
@@ -58,14 +69,19 @@ body{
     margin: 0;
  }
 
- a:link {
-     border-right: 2px gray;
-     text-decoration: none;
-     color: black;
- }
- a:hover{
-     text-decoration:underline blue ;
- }
+ li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+li a:visited{
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration-line: underline;
+    
+}
  .list{
      list-style-type: none;
      border: 2px ;
@@ -78,3 +94,50 @@ body{
      padding-right: 10px;
      border-right: 2px gray;
  }
+
+ .mainSocial{
+    position: relative;
+    margin: 0 auto;
+    width: 850px;
+    height: 700px;
+    background-color:rgb(202, 197, 197);
+ }
+ .leftMainSocial{
+    position: absolute;
+    margin: 0 auto;
+    top:0px;
+    left:0px;
+    width: 350px;
+    height: 700px;
+   
+ }
+ #aboutPage{
+    position: absolute;
+    margin: 0 auto;
+    top:10px;
+    left:0px;
+    width: 350px;
+    height: 100px;
+    background-color: white;
+    align-content: center;
+}
+ .rightMainSocial{
+    position: absolute;
+    margin: 0 auto;
+    top:0px;
+    left:360px;
+    width: 490px;
+    height: 700px;
+ }
+
+ #rightItem2{
+    position: absolute;
+    margin: 0 auto;
+    top:10px;
+    
+    width: 490px;
+    height: 200px;
+    background-color:teal;
+}
+
+
