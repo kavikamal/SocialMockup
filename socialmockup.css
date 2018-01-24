@@ -43,7 +43,7 @@ body{
         height: 200px;
         border: 2px solid black;
         background-color:darkslateblue;
-        background-image: url("img/artificialIntelligence.jpg");
+        background-image: url("img/images.jpeg");
         background-size: contain;
         z-index: 1000;
 }
