@@ -2,9 +2,7 @@ body{
     font-family: Courier New, Courier, monospace;
     background-color: rgb(202, 197, 197);
     padding:10px;
-    padding-bottom:60px;
-    width:850px;
-    margin: 0 Auto;
+   padding-bottom:60px;
 }
 
 .headingFont{
@@ -143,20 +141,26 @@ li a:hover {
      
  }
  .mainSocial{
-   display:flex;
-   flex-direction: row; 
+    /*position: relative;*/
+    margin: 0 auto;
+    width: 850px;
+    overflow: hidden;
+    background-color:rgb(202, 197, 197);
+ }
+ .leftMainSocial{
+    margin: 0 auto;
+    top:0px;
+    left:0px;
+    width: 38%;
+    float: left;
+    height: 100%;
+    margin: 10px 10px -100% 0px;
+    /*margin-right: 10px;
+    
+    margin-bottom: -100%;*/
+    padding-bottom: 100%;
  }
 
- section {
-      margin: 10px;
- }
- .leftSocial{ 
-    display:flex;
-    flex-direction: column;
-    overflow: scroll;
-   flex-basis: 33%;
-    
- }
  .photo1 { 
     width: 100px;
     height: 100px;
@@ -167,61 +171,42 @@ li a:hover {
     float: left;
    
 }
- .left1{  
-   
-    
- }
- .left2{
-    
-    
- }
- .left3{
+ .contentStyle{
+    margin: 0 auto;
+    background-color: white;
+    align-content: center;
+    padding-bottom: 10px;
+}
 
-    display: flex;
-    flex-direction: column;
-   
+
+ .rightMainSocial{
+    /*position: absolute;*/
+    margin: 0 auto;
+    float: left;
+    width: 60%;   
+    height: 100%;
+    padding-bottom: 100%;
+   /* margin-bottom: -100%;*/
+    margin: 10px 0px -100% 0px;
  }
- 
- .left4{
-    border: 2px solid black;
+
+ #rightItem1{
+    /*position: absolute;*/
+    margin: 0 auto;
+    top:10px;
     height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: scroll;
-    justify-content: space-between;    
- }
- .img{
-    height: 50px;
-    width:50px;
-    
-    background-color: blueviolet;
-    
-   }
- .rightSocial{
-   display:flex;
-   flex-direction: column;
-   flex-basis: 67%;
- }
- .right1{
-   
- }
-.right2{
-    
+    background-color: darkslateblue;
+    padding-bottom: 10px ;
 }
-.right3{
-    
+ #rightItem2{
+    /*position: absolute;*/
+    margin: 0 auto;
+    top:10px;
+    height: 200px;
+    background-color: darkslateblue;
+    padding-bottom: 10px;
+}
 
-}
- 
-
-
-.photo1 { 
-    
-   
-}
-.row {
-    
-}
 footer {
     /*position:absolute;*/
     margin: 0 auto;
@@ -236,3 +221,11 @@ footer {
 
  
 
+/* Clear floats after the columns */
+.row {
+    height: 100px;
+    content: "";
+    
+    clear: both;
+    align-items: center;
+}
